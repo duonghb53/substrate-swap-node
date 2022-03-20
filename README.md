@@ -24,7 +24,7 @@ $ cargo run -- --dev --tmp
 
 Once the node is running, use this link to open the Polkadot JS Apps UI and connect to the Substrate
 node: https://polkadot.js.org/apps/#/settings/developer?rpc=ws://127.0.0.1:9944. Use the Settings >
-Developer app and the contents of the [`types.json`] file to add the
+Developer app and the contents of the `types.json` file to add the
 necessary types to the UI.
 
 ## Upstream
