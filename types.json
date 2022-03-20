@@ -2,9 +2,7 @@
     "CurrencyId": {
         "_enum": [
             "Native",
-            "DOT",
-            "KSM",
-            "BTC"
+            "DOT"
         ]
     },
     "CurrencyIdOf": "CurrencyId",
