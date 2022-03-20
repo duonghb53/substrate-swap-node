@@ -1,25 +1,6 @@
-# Open Runtime Module Library (ORML) Workshop
-
-Sub0 Workshop Link: https://www.crowdcast.io/e/axvfinsv/19
-
-This is a workshop project for learning about blockchain runtime development with
-[Substrate](https://substrate.dev/),
-[FRAME](https://substrate.dev/docs/en/knowledgebase/runtime/frame) and the
-[Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library). This
-project implements a simple exchange protocol that is built on top of the ORML
-[Currencies](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/currencies)
-and [Tokens](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/tokens)
-pallets. After completing this workshop, participants should have a better understanding of how to
-design and implement a FRAME pallet.
-
-It is recommanded to read commit by commit to understand each individual steps.
-
 ## Add ORML Pallets
 
-Find the implementations for the Currencies and Tokens pallets in
-[the runtime](blob/master/runtime/src/lib.rs). Notice that the Tokens pallet is configured with a
-`CurrencyId` set that specifies a native token; the Currencies pallet is configured to depend on the
-Tokens pallet.
+Using ORML Pallets: orml-currencies, orml-tokens, orml-traits, orml-utilities
 
 ## Define an Exchange Protocol
 
@@ -29,6 +10,7 @@ in the previous step:
 - `submit_order(from_id, from_amt, to_id, to_amt)`
 - `take_order(order_id)`
 - `cancel_order(order_id)`
+- `get_balance_token(id, currency_id)`
 
 ## Build & Run
 
@@ -42,7 +24,7 @@ $ cargo run -- --dev --tmp
 
 Once the node is running, use this link to open the Polkadot JS Apps UI and connect to the Substrate
 node: https://polkadot.js.org/apps/#/settings/developer?rpc=ws://127.0.0.1:9944. Use the Settings >
-Developer app and the contents of the [`types.json`](blob/master/types.json) file to add the
+Developer app and the contents of the [`types.json`]) file to add the
 necessary types to the UI.
 
 ## Upstream
